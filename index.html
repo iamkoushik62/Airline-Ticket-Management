@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN AND REGISTRATION PAGE</title>
+    <link rel="stylesheet" href="Style/index.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+            <input type="text" placeholder="username" required>
+            <input type="text" placeholder="password" required>  
+            <input type="text" placeholder="email id" required>  
+            <button><a href="Page/veryfi.html">Create</a></button>
+        
+            
+            <p class="message">Already Registered? <a href="#">Login</a></p> 
+            </form>
+
+            <form class="login-form">
+                <input type="text" placeholder="user name" required>
+                <input type="password" placeholder="password" required>
+              <button><a href="Page/Dashboard.html">Login</a></button>
+              <p class="message">Not Registered? <a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle" , opacity: "toggle"},"slow");
+        });
+    </script>
+      
+</body>
+</html>
